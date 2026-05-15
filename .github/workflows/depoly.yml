@@ -39,8 +39,8 @@ jobs:
           push: true
           no-cache: true
           tags: |
-            dias88m/laravel-app:latest
-            dias88m/laravel-app:${{ github.sha }}
+            dias88m/my-app:latest
+            dias88m/my-app:${{ github.sha }}
           build-args: |
             APP_BUILD=${{ github.sha }}
       - name: Deploy on VPS
